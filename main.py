@@ -22,6 +22,12 @@ st.dataframe(df.style.highlight_max(axis = 0) , width = 100 , height = 150)
 # 静的なテーブル
 st.table(df)
 
+# 10 行 3 列のデータフレームを準備
+df = pd.DataFrame(
+    np.random.rand(10,3),
+    columns = ['a', 'b', 'c']
+)
+
 # 折れ線グラフ
 st.line_chart(df)
 
